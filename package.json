@@ -1,0 +1,33 @@
+{
+  "name": "bilingual-guided-reading",
+  "version": "1.0.0",
+  "description": "中英雙語導讀 — Claude Code skill that walks you through English texts section by section, in English and Chinese. Install with `npx bilingual-guided-reading`.",
+  "license": "MIT",
+  "author": "CHEUKFUNGWU",
+  "bin": {
+    "bilingual-guided-reading": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "bilingual-guided-reading/"
+  ],
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "skill",
+    "bilingual",
+    "reading",
+    "english",
+    "chinese"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHEUKFUNGWU/bilingual-guided-reading-skill.git"
+  },
+  "homepage": "https://github.com/CHEUKFUNGWU/bilingual-guided-reading-skill#readme",
+  "bugs": "https://github.com/CHEUKFUNGWU/bilingual-guided-reading-skill/issues"
+}

@@ -16,20 +16,40 @@ Claude picks the mode from the document, or asks you in one line. It replies in 
 
 ## Install 安裝
 
+### Claude Code — `npx`（一句指令）
+
+```bash
+npx bilingual-guided-reading
+```
+
+This copies the skill to `~/.claude/skills/bilingual-guided-reading/`. Restart Claude Code (or start a new session) and it is ready.
+
+自動把 skill 複製到 `~/.claude/skills/`，重啟 Claude Code（或開新 session）即可使用。
+
+| Option 選項 | What it does 作用 |
+|---|---|
+| `npx bilingual-guided-reading` | Install for all projects 所有項目共用 |
+| `npx bilingual-guided-reading --project` | Install for the current project only 只裝在目前項目 `./.claude/skills/` |
+| `npx bilingual-guided-reading --agents` | Install to `~/.agents/skills/` |
+| `npx bilingual-guided-reading --dir <path>` | Install to a custom folder 指定資料夾 |
+| `npx bilingual-guided-reading --uninstall` | Remove the skill 移除 |
+
+To update later, run the same command — it overwrites the old copy. 日後更新：重新執行同一句指令，會覆蓋舊版。
+
 ### Claude app (claude.ai / desktop)
 
-1. Download [`dist/bilingual-guided-reading.zip`](dist/bilingual-guided-reading.zip).
+1. Download [`bilingual-guided-reading.zip`](bilingual-guided-reading.zip).
 2. In Claude, open **Settings → Capabilities → Skills** and upload the zip. (Menu names may change; look for the Skills section.)
 3. Make sure the skill is switched on.
 
-下載 `dist/bilingual-guided-reading.zip`，到 Claude 的 **Settings → Capabilities → Skills** 上傳並啟用。
+下載 `bilingual-guided-reading.zip`，到 Claude 的 **Settings → Capabilities → Skills** 上傳並啟用。
 
-### Claude Code
+### Manual 手動安裝
 
 Copy the `bilingual-guided-reading` folder into `~/.claude/skills/`:
 
 ```bash
-git clone https://github.com/<your-username>/bilingual-guided-reading-skill.git
+git clone https://github.com/CHEUKFUNGWU/bilingual-guided-reading-skill.git
 cp -r bilingual-guided-reading-skill/bilingual-guided-reading ~/.claude/skills/
 ```
 
